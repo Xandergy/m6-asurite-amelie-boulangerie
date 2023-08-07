@@ -1,3 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
 
 * {
     font-family: Verdana, Arial, sans-serif;
@@ -25,7 +77,12 @@ header {
 
 h1 {
     margin: 0;
-    padding: 50px 0 0 32px;
+    padding-top: 50px;  
+    padding-left: 32px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 #grid-container {
@@ -35,6 +92,7 @@ h1 {
     display: grid;
     grid-template-columns: 184px 1fr;
     gap: 0 16px;
+    font-family:Verdana, Arial, sans-serif;
 }
 
 nav {
@@ -45,7 +103,7 @@ nav {
 nav ul {
     list-style-type: none; 
     padding: 0; 
-    margin: 0; 
+    margin-left: 40px; 
 }
 
 nav li {
@@ -70,6 +128,11 @@ main {
     color: #542c1b;
     padding-bottom: 16px;
 }
+h2{
+    font-size: 1.5em;
+    font-weight:bold;
+    padding: 16px;
+}
 
 main img {
     float: left;
@@ -81,23 +144,29 @@ main p, main ul {
 }
 
 main p {
-    margin-left: 32px;
+    margin: 16px;
+    font-size: 1em;
 }
 
 main ul {
-    margin-left: 16px;
+    margin: 16px;
+    font-size: 1em;
+    padding-inline-start: 40px;
+    list-style-type: disc;
 }
 
 address {
     clear: both;
     padding-top: 16px;
+    font-style: italic;
 }
 
 footer {
     font-style: italic;
     text-align: center;
     background-color: #afaeb4;
-    padding: 8px 0;
+    padding: 28px 0;
+    font-family: Verdana, Arial, sans-serif;
 }
   
   
